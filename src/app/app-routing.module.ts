@@ -5,6 +5,10 @@ import {PageTwoComponent} from "./pages/page-two/page-two.component";
 
 const routes: Routes = [
   {
+    path: 'books',
+    loadChildren: () => import('./books/books.module').then(m => m.BooksModule)
+  },
+  {
     path: 'page-1',
     component: PageOneComponent
   },

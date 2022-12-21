@@ -5,9 +5,9 @@
         <mat-icon>home</mat-icon>
         Моя страница
       </a>
-      <a mat-list-item routerLink="page-2" routerLinkActive="mat-mdc-list-item-active" [routerLinkActiveOptions]="{exact: true}">
+      <a mat-list-item routerLink="books" routerLinkActive="mat-mdc-list-item-active" [routerLinkActiveOptions]="{exact: true}">
         <mat-icon>mode_comment</mat-icon>
-        Сообщения
+        Книги
       </a>
       <a mat-list-item routerLink="page-3" routerLinkActive="mat-mdc-list-item-active" [routerLinkActiveOptions]="{exact: true}">
         <mat-icon>mode_comment</mat-icon>
@@ -24,7 +24,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <button mat-raised-button color='primary' (click)="toggleSidenav()">Toggle sidenav</button>
+<!--    <button mat-raised-button color='primary' (click)="toggleSidenav()">Toggle sidenav</button>-->
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
